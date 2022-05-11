@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "esnext",
+        "module": "esnext",
+        "jsx": "preserve",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "removeComments": false,
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "incremental": true,
+        "allowJs": true,
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    }
+}

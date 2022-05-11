@@ -1,23 +1,29 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue',
-</script>
+<!-- @format -->
 
 <template>
-  <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello Vue 331 + TypeScript + Vite" />
-  </div>
+    <HelloWorld />
 </template>
 
-<style>
+<script lang="ts">
+import {defineComponent} from 'vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default defineComponent({
+    name: 'App',
+    components: {
+        HelloWorld,
+    },
+})
+</script>
+
+<style lang="stylus">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  box-sizing border-box
+  position relative
+  width 100%
+  height 100%
 }
 </style>

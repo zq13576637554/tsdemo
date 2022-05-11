@@ -1,23 +1,23 @@
+/** @format */
+
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
-  extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
-    'plugin:prettier/recommended' // 添加 prettier 插件
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
-    sourceType: 'module',
-  },
-  plugins: [
-    'vue',
-    '@typescript-eslint',
-  ],
-  rules: {
-  },
-};
+    extends: ['prettier/@typescript-eslint', 'plugin:prettier/recommended'],
+    settings: {
+        react: {
+            pragma: 'React',
+            version: 'detect',
+        },
+    },
+    parserOptions: {
+        ecmaVersion: 2019,
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
+    env: {
+        browser: true,
+        node: true,
+    },
+}
